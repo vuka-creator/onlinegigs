@@ -92,8 +92,8 @@ const signupForm = document.getElementById('signup-form');
 const loginForm = document.getElementById('login-form');
 const adminLoginForm = document.getElementById('admin-login-form');
 const adminConfig = window.APP_CONFIG || {
-  ADMIN_EMAIL: 'calebyegon19@gmail.com',
-  ADMIN_PASSWORD: 'Caleb25583213006*',
+  ADMIN_EMAIL: 'admin@example.com',
+  ADMIN_PASSWORD: 'ChangeMeSecurely',
   APP_SECRET: 'REPLACE_WITH_SECURE_KEY'
 };
 
