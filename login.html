@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Login to your OnlineGigs account to manage work, proposals, and your freelancer or customer profile." />
+  <title>Login | OnlineGigs</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="brand-wrap">
+        <a class="brand" href="index.html">OnlineGigs</a>
+        <span class="tagline">Access your account securely.</span>
+      </div>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="freelancers.html">Freelancers</a>
+        <a href="services.html">Services</a>
+        <a href="learn.html">Learn</a>
+        <a href="ai-hub.html">AI Hub</a>
+        <a href="blog.html">Blog</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="architecture.html">Architecture</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-button" aria-label="Toggle dark mode">🌗</button>
+        <a class="button button-outline" href="login.html">Login</a>
+        <a class="button button-primary" href="signup.html">Sign Up</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section section-large">
+        <div class="section-header center">
+          <span class="eyebrow">Welcome Back</span>
+          <h2>Login to your OnlineGigs account</h2>
+          <p>Continue managing your work as a freelancer or customer with secure access to proposals, messages, and project details.</p>
+        </div>
+
+        <div class="newsletter-card">
+          <form id="login-form" class="newsletter-form">
+            <label>
+              Email address
+              <input type="email" name="email" placeholder="you@company.com" autocomplete="email" required />
+            </label>
+            <label>
+              Password
+              <div class="input-group">
+                <input type="password" name="password" placeholder="Enter your password" autocomplete="current-password" required />
+                <button type="button" class="toggle-password">Show</button>
+              </div>
+            </label>
+            <div class="role-toggle">
+              <button type="button" class="role-button active" data-role="freelancer">Freelancer</button>
+              <button type="button" class="role-button" data-role="customer">Customer</button>
+            </div>
+            <input type="hidden" name="accountType" value="freelancer" />
+            <button class="button button-primary" type="submit">Login</button>
+          </form>
+          <div id="login-feedback" class="form-error" aria-live="polite"></div>
+          <p style="color: var(--muted); margin-top: 1rem;">New here? <a href="signup.html">Create an account</a>.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <h3>About OnlineGigs</h3>
+          <p>OnlineGigs supports remote work with tools for hiring, proposal management, and talent growth.</p>
+        </div>
+                <div>
+          <h4>Company</h4>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="pricing.html">Pricing</a>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>hello@onlinegigs.co.ke</p>
+          <p>+254 700 000 000</p>
+        </div>
+      </div>
+      <p class="footer-note">© 2026 OnlineGigs. All rights reserved.</p>
+    </footer>
+  </div>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+

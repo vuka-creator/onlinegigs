@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sign up for OnlineGigs as a freelancer or customer to start posting jobs, receiving proposals, and hiring talent." />
+  <title>Sign Up | OnlineGigs</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="brand-wrap">
+        <a class="brand" href="index.html">OnlineGigs</a>
+        <span class="tagline">Choose the right path for your work.</span>
+      </div>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="freelancers.html">Freelancers</a>
+        <a href="services.html">Services</a>
+        <a href="learn.html">Learn</a>
+        <a href="ai-hub.html">AI Hub</a>
+        <a href="blog.html">Blog</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="architecture.html">Architecture</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-button" aria-label="Toggle dark mode">🌗</button>
+        <a class="button button-outline" href="login.html">Login</a>
+        <a class="button button-primary" href="signup.html">Sign Up</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section section-large">
+        <div class="section-header center">
+          <span class="eyebrow">Sign Up</span>
+          <h2>Create an account as a Freelancer or Customer</h2>
+          <p>Build your profile, post projects, receive proposals, and start collaborating without fixed pricing constraints.</p>
+        </div>
+
+        <div class="newsletter-card">
+          <form id="signup-form" class="newsletter-form">
+            <label>
+              Full name
+              <input type="text" name="name" placeholder="Your full name" autocomplete="name" required />
+            </label>
+            <label>
+              Email address
+              <input type="email" name="email" placeholder="you@company.com" autocomplete="email" required />
+            </label>
+            <label>
+              Password
+              <div class="input-group">
+                <input type="password" name="password" placeholder="Create a strong password" autocomplete="new-password" required />
+                <button type="button" class="toggle-password">Show</button>
+              </div>
+            </label>
+            <div class="role-toggle">
+              <button type="button" class="role-button active" data-role="freelancer">Freelancer</button>
+              <button type="button" class="role-button" data-role="customer">Customer</button>
+            </div>
+            <input type="hidden" name="accountType" value="freelancer" />
+            <div class="form-note">Use at least 8 characters, one uppercase letter, and one number.</div>
+            <button class="button button-primary" type="submit">Create account</button>
+          </form>
+          <div id="signup-feedback" class="form-error" aria-live="polite"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <h3>About OnlineGigs</h3>
+          <p>OnlineGigs connects freelance talent with customers who need modern digital services and project-based work.</p>
+        </div>
+                <div>
+          <h4>Company</h4>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="pricing.html">Pricing</a>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>hello@onlinegigs.co.ke</p>
+          <p>+254 700 000 000</p>
+        </div>
+      </div>
+      <p class="footer-note">© 2026 OnlineGigs. All rights reserved.</p>
+    </footer>
+  </div>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+

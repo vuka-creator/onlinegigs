@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="OnlineGigs platform architecture for staffing, matching, payment, analytics, and notifications." />
+  <title>Architecture | OnlineGigs</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="brand-wrap">
+        <a class="brand" href="index.html">OnlineGigs</a>
+        <span class="tagline">Built for global work and intelligent delivery.</span>
+      </div>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="freelancers.html">Freelancers</a>
+        <a href="services.html">Services</a>
+        <a href="learn.html">Learn</a>
+        <a href="ai-hub.html">AI Hub</a>
+        <a href="blog.html">Blog</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="architecture.html">Architecture</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-button" aria-label="Toggle dark mode">🌗</button>
+        <a class="button button-outline" href="login.html">Login</a>
+        <a class="button button-primary" href="signup.html">Sign Up</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section section-large">
+        <div class="section-header center">
+          <span class="eyebrow">Platform Architecture</span>
+          <h2>How OnlineGigs delivers reliable matching, secure payments, and real-time insights</h2>
+          <p>Explore the core modules, workflow, and technology stack that power the marketplace for clients, freelancers, and administrators.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>React + Next.js Frontend</h3>
+            <p>Server-rendered pages and SEO-friendly interfaces for clients, freelancers, and admins.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Node.js + Express API</h3>
+            <p>Handles authentication, job workflows, proposals, and secure platform operations.</p>
+          </article>
+          <article class="feature-card">
+            <h3>MongoDB + Mongoose</h3>
+            <p>Stores users, jobs, proposals, payments, and activity in a scalable document database.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="section-header">
+          <span class="eyebrow">Technical Overview</span>
+          <h2>Your selected stack for production readiness</h2>
+          <p>The architecture is optimized for performance, search engine visibility, modern APIs, and secure global/local payments.</p>
+        </div>
+
+        <div class="data-table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Module</th>
+                <th>Function</th>
+                <th>Example Tech</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Frontend</td>
+                <td>Client-facing UI, freelancer profiles, dashboard, and SEO-friendly pages</td>
+                <td>React + Next.js</td>
+              </tr>
+              <tr>
+                <td>Backend API</td>
+                <td>RESTful endpoints, authentication, job workflows, and business logic</td>
+                <td>Node.js + Express</td>
+              </tr>
+              <tr>
+                <td>Database</td>
+                <td>Stores users, jobs, proposals, messages, and payment records</td>
+                <td>MongoDB + Mongoose</td>
+              </tr>
+              <tr>
+                <td>Payments</td>
+                <td>Processes client payments and pays workers across global and local methods</td>
+                <td>Stripe + M-Pesa</td>
+              </tr>
+              <tr>
+                <td>Quality Assurance</td>
+                <td>Reviews completed work before client approval</td>
+                <td>Automated scripts + manual review dashboard</td>
+              </tr>
+              <tr>
+                <td>Notifications</td>
+                <td>Sends alerts for deadlines, approvals, and payouts</td>
+                <td>Firebase Cloud Messaging or Twilio</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section section-large">
+        <div class="section-header">
+          <span class="eyebrow">Workflow</span>
+          <h2>Client jobs, platform orchestration, and worker delivery</h2>
+          <p>The system moves from job request through worker assignment, work delivery, quality checks, and final payout while keeping everyone informed.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>Step 1: Post & Discover</h3>
+            <p>Clients post jobs, freelancers browse listings, and the matching engine surfaces ideal candidates.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Step 2: Assign & Track</h3>
+            <p>The job management service assigns talent, tracks progress, and logs milestones.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Step 3: Review & Pay</h3>
+            <p>QA verifies work before approval, then the payment gateway processes payments and payouts.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <h3>About OnlineGigs</h3>
+          <p>OnlineGigs builds remote work infrastructure for modern teams and independent talent.</p>
+        </div>
+                <div>
+          <h4>Company</h4>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="pricing.html">Pricing</a>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>hello@onlinegigs.co.ke</p>
+          <p>+254 700 000 000</p>
+        </div>
+      </div>
+      <p class="footer-note">© 2026 OnlineGigs. All rights reserved.</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
